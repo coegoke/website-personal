@@ -3,20 +3,20 @@ export default function Competencies() {
         {
             icon: 'psychology',
             title: 'NLP & Generative AI',
-            desc: 'Building RAG pipelines, chatbots, and virtual assistants powered by LLMs. Expertise in prompt engineering, fine-tuning, and efficient inference.',
-            tags: ['LangChain', 'GPT-4o', 'vLLM', 'Langfuse'],
+            desc: 'Building RAG pipelines, multi-agent systems (Critic/Refiner), chatbots, and virtual assistants powered by LLMs. Expertise in prompt engineering, grounding search, and evaluation with Langfuse.',
+            tags: ['LangGraph', 'OpenAI API', 'Gemini 2.5', 'Langfuse'],
         },
         {
-            icon: 'visibility',
-            title: 'Computer Vision & OCR',
-            desc: 'Developing OCR systems for KTP, lab tests, and election reporting. CNN-LSTM-RNN architectures with YOLO detection and transformer-based recognition.',
-            tags: ['YOLO', 'PaddleOCR', 'TrOCR', 'OpenCV'],
+            icon: 'bolt',
+            title: 'Automation & Workflows',
+            desc: 'Designing automated reporting and business-intelligence workflows on n8n, combining computer vision recognition with multi-modal LLM analysis for email, ordering, and procurement intelligence.',
+            tags: ['n8n', 'Google Apps Script', 'YOLO', 'RabbitMQ'],
         },
         {
             icon: 'hub',
             title: 'MLOps & Cloud',
-            desc: 'Deploying models on AWS Lambda, GCP Cloud Run, and NVIDIA infrastructure. Queue management with RabbitMQ, monitoring with MLflow and Langfuse.',
-            tags: ['AWS Lambda', 'GCP', 'Docker', 'MLflow'],
+            desc: 'Deploying pipelines on AWS Lambda + SAM CLI and GCP Cloud Run, with pgvector and PostgreSQL for cost tracking and vector search, monitored end-to-end with Langfuse.',
+            tags: ['AWS Lambda', 'pgvector', 'GCP Cloud Run', 'Docker'],
         },
     ];
 
