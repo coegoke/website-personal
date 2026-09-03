@@ -75,9 +75,9 @@ export default function Hero() {
                             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-blue-600 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
                             <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-2xl overflow-hidden border border-white/10 bg-surface-dark flex items-center justify-center">
                                 <img
-                                    src="/profile.jpg"
+                                    src={`${import.meta.env.BASE_URL}profile.jpg`}
                                     alt="Fauzan Ihza Fajar"
-                                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500"
+                                    className="w-full h-full object-cover object-[center_30%] scale-150 opacity-90 group-hover:opacity-100 transition duration-500"
                                 />
 
                                 {/* Terminal overlay */}
