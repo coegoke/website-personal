@@ -23,6 +23,7 @@ export default function Navbar() {
         { href: '#hero', label: 'Home' },
         { href: '#competencies', label: 'Competencies' },
         { href: '#experience', label: 'Experience' },
+        { href: '#education', label: 'Education' },
         { href: '#projects', label: 'Projects' },
         { href: '#competitions', label: 'Achievements' },
     ];

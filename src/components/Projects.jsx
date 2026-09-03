@@ -35,6 +35,32 @@ export default function Projects() {
                 { label: 'Stack:', value: 'LangChain, OpenAI, AWS Lambda', highlight: true },
             ],
             badge: 'Production Ready',
+        },
+        {
+            dir: 'deep-research-website',
+            cmd: '$ npm run dev',
+            title: 'Deep Research Agent Website',
+            desc: 'Full-stack AI research agent that conducts deep web search and aggregates data, streaming its live reasoning to the UI with a typewriter effect via FastAPI, LangChain, and MCP tool execution.',
+            stats: [
+                { label: 'Agent:', value: 'LangChain + MCP' },
+                { label: 'Model:', value: 'Llama 3.3 Nemotron' },
+                { label: 'Stack:', value: 'React, Vite, FastAPI, TypeScript', highlight: true },
+            ],
+            badge: 'Open Source',
+            link: 'https://github.com/coegoke/deep-research-website',
+        },
+        {
+            dir: 'wearables-assistant',
+            cmd: '$ uvicorn main:app --reload',
+            title: 'Wearables Assistant',
+            desc: 'Conversational AI that lets users query and analyze wearable device data — steps, sleep, heart rate, activity — through a natural language chat interface backed by agentic query routing.',
+            stats: [
+                { label: 'Agent:', value: 'LangGraph + Groq' },
+                { label: 'Model:', value: 'Llama 3.3 70B' },
+                { label: 'Stack:', value: 'FastAPI, React, SQLite', highlight: true },
+            ],
+            badge: 'Open Source',
+            link: 'https://github.com/coegoke/Wearables-Assistant',
             fullWidth: true,
         },
     ];
@@ -105,9 +131,21 @@ export default function Projects() {
                                 </div>
 
                                 {/* Status badge */}
-                                <div className="inline-flex items-center px-3 py-1 bg-black/70 text-green-400 text-xs rounded border border-green-400/30 backdrop-blur-sm">
-                                    <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse" />
-                                    {p.badge}
+                                <div className="flex items-center flex-wrap gap-3">
+                                    <div className="inline-flex items-center px-3 py-1 bg-black/70 text-green-400 text-xs rounded border border-green-400/30 backdrop-blur-sm">
+                                        <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse" />
+                                        {p.badge}
+                                    </div>
+                                    {p.link && (
+                                        <a
+                                            href={p.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center px-3 py-1 bg-black/70 text-blue-400 text-xs rounded border border-blue-400/30 hover:border-blue-400/60 hover:text-blue-300 transition-colors backdrop-blur-sm"
+                                        >
+                                            View on GitHub &rarr;
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>

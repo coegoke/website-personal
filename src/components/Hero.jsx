@@ -35,9 +35,9 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-xl text-gray-400 max-w-lg font-light leading-relaxed">
-                            AI Engineer building scalable intelligent systems — from OCR pipelines and
-                            RAG architectures to production LLM deployments. Bridging cutting-edge
-                            research with real-world products.
+                            AI Engineer building scalable intelligent systems — from RAG architectures
+                            and OCR pipelines to n8n automation workflows and multi-agent LLM products.
+                            Bridging cutting-edge research with real-world products.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -59,7 +59,7 @@ export default function Hero() {
 
                         {/* Tech badges */}
                         <div className="pt-8 flex items-center space-x-6 text-gray-400">
-                            {['Python', 'PyTorch', 'LangChain', 'AWS'].map((tech) => (
+                            {['Python', 'LangGraph', 'n8n', 'AWS'].map((tech) => (
                                 <div key={tech} className="flex items-center space-x-2">
                                     <span className="font-mono text-primary">&gt;&gt;&gt;</span>
                                     <span className="font-mono text-sm">{tech}</span>
@@ -83,7 +83,7 @@ export default function Hero() {
                                 {/* Terminal overlay */}
                                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/60 backdrop-blur-sm border-t border-white/10">
                                     <div className="font-mono text-xs text-primary mb-1">Status:</div>
-                                    <div className="font-mono text-xs text-white">AI Engineer — Asa Ren</div>
+                                    <div className="font-mono text-xs text-white">AI Engineer — Teman Data</div>
                                     <div className="w-full bg-gray-700 h-1 mt-2 rounded-full overflow-hidden">
                                         <div className="bg-primary h-full w-full animate-pulse" />
                                     </div>

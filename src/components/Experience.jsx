@@ -1,17 +1,24 @@
 export default function Experience() {
     const jobs = [
         {
-            title: 'AI Engineer @ Asa Ren',
-            date: 'Oct 2024 — Present',
+            title: 'AI Engineer @ Teman Data',
+            date: 'Jun 2026 — Present',
             active: true,
-            desc: 'Developed RAG pipeline integrating DNA reports, lab tests, and quizzes deployed on AWS Lambda. Designed Virtual Assistant with memory, contextual soft-selling, and Langfuse monitoring. Built AI Agent for RSID identification and a grounding-based search pipeline for pharmacogenomic drug discovery.',
+            desc: 'Designed and built an automated social media reporting workflow on n8n combining YOLO for visual content recognition and Gemini 2.5 for multi-modal text and data analysis. Developed MVPs for Email AI Intelligence (chat knowledge base over full email content), Ordering Intelligence (raw food ingredient demand forecasting), and Procurement Intelligence.',
+            tags: ['n8n', 'YOLO', 'Gemini 2.5', 'Forecasting'],
+        },
+        {
+            title: 'AI Engineer @ Asa Ren',
+            date: 'Oct 2024 — May 2026',
+            active: false,
+            desc: 'Architected end-to-end RAG pipelines and lab test OCR systems with OpenAI, pgvector, AWS Lambda, and SAM CLI, with PostgreSQL cost tracking. Designed a Virtual Assistant with multi-pipeline workflows (memory saving, soft-selling, upselling) monitored via Langfuse. Developed domain-specific AI agents and grounding search pipelines for RSID identification and pharmacogenomic research. Built a Multi-Agent Content System (Critic + Refiner) for self-correcting USP mini-reports and an automated avatar positioning pipeline.',
             tags: ['AWS Lambda', 'pgvector', 'Langfuse', 'OpenAI API', 'RAG'],
         },
         {
             title: 'Lead Divisi Engineering @ Braincore',
             date: 'Jan 2024 — Present',
             active: true,
-            desc: 'Monitoring and providing technical feedback on AI projects including Driving Monitoring System, Palm Oil Ripeness Detection, image classification pipelines, and more.',
+            desc: 'Monitoring and providing technical feedback on AI projects including Driver Monitoring System, Palm Oil Ripeness Detection, Cartoon/Real Image Classification, and Blur/Bokeh Detection, while mentoring team members.',
             tags: ['Leadership', 'Computer Vision', 'Deep Learning'],
         },
         {
@@ -20,13 +27,6 @@ export default function Experience() {
             active: false,
             desc: 'Engineered robust OCR system for KTP using YOLO + CTC loss. Designed chatbot for customer interaction. Architected queue management with RabbitMQ. Developed RAG using GPT-4o-mini for company document processing.',
             tags: ['YOLO', 'CTC Loss', 'RabbitMQ', 'GPT-4o-mini'],
-        },
-        {
-            title: 'Teaching Assistant SQL @ Pacmann',
-            date: 'May 2023 — Jan 2024',
-            active: false,
-            desc: 'Conducted PostgreSQL workshops covering DDL, DML, Window Functions, CTEs, and Stored Procedures. Facilitated live Zoom tutorials for 30+ participants and assessed 50+ exam participants.',
-            tags: ['PostgreSQL', 'Teaching', 'SQL'],
         },
     ];
 
